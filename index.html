@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    see the outputs in console
+</body>
+<script>
+    let numbers = [1, 2, 3, 4, 5];
+    let sum = 0;
+    for (let num of numbers) {
+        sum += num;
+    }
+    console.log("sum: ",sum);
+
+
+ 
+    for (let num of numbers) {
+        sum += num;
+    }
+    let average = sum / numbers.length;
+    console.log("average: ", average); 
+
+   
+let product = 1;
+for (let num of numbers) {
+    product *= num;
+}
+console.log("multiply: ",product);
+
+
+
+let max = numbers[0];
+for (let num of numbers) {
+    if (num > max) max = num;
+}
+console.log("Find Maximum: ", max);
+
+
+
+let min = numbers[0];
+for (let num of numbers) {
+    if (num < min) min = num;
+}
+console.log("Find Minimum: ", min);
+
+
+
+</script>
+
+</html>
